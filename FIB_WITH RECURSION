@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+int fibonoris(int);
+int main()
+{
+	int i,n;
+	printf("enter n");
+	scanf("%d",&n);
+	
+	for(i=0;i<n;i++)
+	printf("%d\t",fibonoris(i));
+}
+
+int fibonoris(int n)
+{
+	if(n==0)
+	   return(0);
+	else if(n==1)
+	   return(1);
+	else
+	   return(fibonoris(n-1)+fibonoris(n-2));      
+}
